@@ -1,0 +1,37 @@
+body {
+     background-color: #e3e2de;
+	 font-family: Bahnschrift, Helvetica, Arial;
+}
+
+a {
+	text-decoration: none;
+	color: #FF6969;
+}
+
+h1 {
+	margin: 0;
+}
+
+#container {
+	background-color: gray;
+	width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1px;
+}
+
+#header {
+	background-color: #e64758;
+	text-align: center;
+	padding: 10px;
+}
+
+#about {
+	background-color: white;
+	margin-left: left;
+	margin-right: auto;
+	padding: 10px;
+	width: 400px;
+	height: 200px;
+	height: 200px;
+}
