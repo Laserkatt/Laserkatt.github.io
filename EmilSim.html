@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+        <head>
+		
+                <title>POV | Du meddelar Emil</title>
+				<link rel="stylesheet" type="text/css" href="EmilStyle.css" />
+				
+        </head>
+
+        <body>
+		
+		    <div id="container">
+			
+                <div id="header">
+				
+                  <h1>POV | Du meddelar Emil</h1>
+				  
+                </div>
+				
+				<div id="message">
+				
+                </div>			
+
+				<button id=messagebutton onclick="Message()">Meddela Emil</button>
+				
+				<button onclick="Restart()">Starta om</button>
+
+                <a href="https://discord.com/channels/@me/747447870021697676"><button>Pröva på riktigt</button></a>
+				
+                <div id="footer">
+				
+                  <p>&copy Tage Buchholtz, 2021</p>
+				  
+				</div>
+				
+				<script>
+				var audio = new Audio('audio_file.wav');
+				var restart_audio = new Audio('restart_sound.wav');
+				
+                function Message() {				
+                  document.getElementById('message').innerHTML = "<small>Du | Vill du spela något</small><br>";		
+                  document.getElementById("messagebutton").disabled = true;				  
+                  audio.play();	
+
+                  setTimeout(IsTyping, 2000);  
+                }
+				
+				function IsTyping() {
+				  document.getElementById('message').innerHTML = "<small>Du | Vill du spela något</small><br><i>Emilski is typing</p>";
+				  setTimeout(Reply, 4000);  
+				}
+
+                function Reply() {		
+                  document.getElementById('message').innerHTML = "<small>Du | Vill du spela något</small><br><small>Emilski | Nope</small><br>";	
+				
+                  audio.play();	
+                }
+				
+				function Restart() {				
+                  document.getElementById('message').innerHTML = "";		
+                  document.getElementById("messagebutton").disabled = false;	
+
+                  restart_audio.play();					  
+                }
+                </script>
+				
+			</div>
+			
+        </body>
+		
+</html>
