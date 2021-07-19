@@ -41,6 +41,8 @@
                   document.getElementById('message').innerHTML = "<small>Du | Vill du spela något</small><br>";		
                   document.getElementById("messagebutton").disabled = true;				  
                   audio.play();	
+				  
+				  document.getElementById("messagebutton").disabled = true;		
 
                   setTimeout(IsTyping, 2000);  
                 }
@@ -52,8 +54,23 @@
 
                 function Reply() {		
                   document.getElementById('message').innerHTML = "<small>Du | Vill du spela något</small><br><small>Emilski | Nope</small><br>";	
+				  setTimeout(Message2, 2000);  
 				
                   audio.play();	
+                }
+				
+				function Message2() {				
+                  document.getElementById('message').innerHTML = "<small>Du | Vill du spela något</small><br><small>Emilski | Nope</small><br><small>Du | Vill du spela något imorgon?</small>";		
+                  setTimeout(Block, 5000);  
+				  
+                  audio.play();	
+
+                }
+				
+				function Block() {				
+                  document.getElementById('message').innerHTML = "<small>Du | Vill du spela något</small><br><small>Emilski | Nope</small><br><small>Du | Vill du spela något imorgon?</small><br><small>Discord | This user has blocked you </small>";			  
+                  audio.play();	
+
                 }
 				
 				function Restart() {				
