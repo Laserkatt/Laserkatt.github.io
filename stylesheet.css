@@ -2,30 +2,46 @@ body {
   background-image: url("images/checkers.png");
 }
 
-h1 {
-  color: white;
-  text-align: center;
-  padding: 0px;
+h6 {
+  font-family: verdana;
+  font-size: 30px;
 }
 
 p {
   font-family: verdana;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 a {
   font-family: verdana;
-  font-size: 20px;
+  font-size: 25px;
+}
+
+td {
+  vertical-align: top;
+}
+
+#container {
+	background-color: #6badde;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 5px;
+	
+	border: 2px solid #84de94;
+	outline-style: double;
+	outline-offset: -2px;
+	border-radius: 2px;
+	
 }
 
 #header {
-	background-color: #BF8FB7;
+	background-color: #84de94;
 	padding: 15px;
 	margin-left: auto;
 	margin-right: auto;
-	border-radius: 2px;
 	
-	border: 2px solid white;
+	border: 2px solid #84de94;
 	outline-style: double;
 	outline-offset: -2px;
 	border-radius: 2px;
@@ -34,56 +50,38 @@ a {
 	
 	text-align: center;
 	
-	font-size: 25px;
+	font-size: 10px;
 
 }
 
-#container {
-	background-color: #EDCAD8;
-	width: 900px;
-	margin-left: auto;
-	margin-right: auto;
+#news {
+	background-color: #6badde;
 	padding: 5px;
-	
-	border: 2px solid white;
-	outline-style: double;
-	outline-offset: -2px;
-	border-radius: 2px;
-	
 }
 
-#stuff {
-	background-color: #BF8FB7;
+.stuff {
+	background-color: #84de94;
 	width: auto;
 	padding: 10px;
 	margin-left: auto;
-	border-radius: 2px;
 	
 	text-align: left-side;
 	
 	margin-bottom: 6px;
 	
-	border: 2px solid white;
+	border: 2px solid #84de94;
 	outline-style: double;
 	outline-offset: -2px;
 	border-radius: 2px;
 
 }
 
-#contact_info {
-	background-color: #BF8FB7;
-	padding: 10px;
+.smalltext {
+	font-size: 15px;
+}
+
+.center {
 	margin-left: auto;
-	border-radius: 2px;
-	
-	text-align: left-side;
-	
-	margin-bottom: 6px;
-	
-	border: 2px solid white;
-	outline-style: double;
-	outline-offset: -2px;
-	border-radius: 2px;
-
-
+	margin-right: auto;
+	text-align: center
 }
